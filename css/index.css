@@ -135,6 +135,79 @@ html,
 body {
   height: 100%;
 }
+/*BEGIN NAVIGATION STYLING*/
+nav {
+  display: flex;
+  justify-content: center;
+  /*this closes the navContainer*/
+}
+nav ul .navContainer {
+  list-style: none;
+}
+/* this closes the nav*/
+/*END NAVIGATION STYLING*/
+/*BEGIN ABOUT SECTION STYLING*/
+#about {
+  /*this closes quote class*/
+}
+/*this closes about section*/
+/*this closes the main Img*/
+.intro {
+  /*this closes the div*/
+  /*this closes the h1*/
+  /*this closes the h2*/
+  /*this closes the paragraph*/
+}
+/*this closes the intro*/
+/*this closes the portfolio button*/
+/*END ABOUT SECTION STYLING*/
+/*BEGIN SKILLS SECTION STYLING*/
+.skills {
+  /*this closes the div*/
+  /*this closes the h3*/
+  /*this closes the ul*/
+  /*this close the list items*/
+}
+/*this closes the skills class*/
+/*END SKILLS SECTION STYLING*/
+/*BEGIN EDUCATION SECTON STYLING*/
+#education {
+  /*this closes h2*/
+  /*this closes big eduContainer*/
+  /*this closes the attributes*/
+  /*this closes h3*/
+  /*this closes h4*/
+  /*this closes paragraph*/
+}
+#education .eduContainer {
+  /*this closes div*/
+}
+/*this closes education section*/
+/*END EDUCATION SECTION STYLING*/
+/*BEGIN WORK SECTION STYLING*/
+#work {
+  /*this closes h2*/
+  /*this closes big workContainer*/
+}
+#work .workContainer {
+  /*this closes div*/
+}
+#work .workContainer div {
+  /*this closes h3*/
+  /*this closes h4*/
+  /*this closes paragraph*/
+}
+/*this closes work section*/
+/*END WORK SECTION STYLING*/
+/*BEGIN CONTACT SECTION STYLING*/
+#contact {
+  /*this closes the div*/
+  /*this closes h5*/
+  /*this closes the paragraph*/
+}
+/*this closes the contact section*/
+/*END CONTACT SECTIONS STYLING*/
+/*BEGIN FOOTER STYLING*/
 footer {
   /*this closes the nav section */
 }
@@ -146,3 +219,4 @@ footer nav ul .social {
   list-style: none;
 }
 /*this closes the footer */
+/*END FOOTER STYLING*/
