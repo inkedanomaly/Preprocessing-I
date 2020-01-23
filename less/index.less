@@ -106,35 +106,16 @@ nav {
 	}
 }
 											/*END NAVIGATION STYLING*/
-											/*BEGIN ABOUT SECTION STYLING*/
-.aboutDiv{
-	.center();
-	.margin();
-	.border();
-	background-color: @background-color;
-
-		p{
-		font-style: italic;
-		.paragraph();
-	}/*this closes the paragraph*/
-}/*this closes about class*/
-
-.mainImg{
-	display:flex;
-	justify-content: flex-end;
-	align-items: center;
-	width:20%;
-}
 
 											/*begin intro styling*/					
 .intro{
 	.center();
 	.border();
-	background-color:@background-color;
+	.margin();
 
 		div{
 			.margin();
-			width:80%;
+			width:60%;
 	}/*this closes the div*/
 
 		p{
@@ -145,8 +126,30 @@ nav {
 
 .portfolio button{
 	.center();
+	font: @main-font;
 }/*this closes the portfolio button*/
 											/*end intro styling*/
+											/*BEGIN ABOUT SECTION STYLING*/
+.aboutDiv{
+	.center();
+	.margin();
+
+		p{
+		font-style: italic;
+		.paragraph();
+		background-color: @background-color;
+		color:@main-color;
+		.border();
+		width:50%;
+	}/*this closes the paragraph*/
+}/*this closes about class*/
+
+.mainImg{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	width:10%;
+}
 											/*END ABOUT SECTION STYLING*/
 											/*BEGIN SKILLS SECTION STYLING*/
 .skills{

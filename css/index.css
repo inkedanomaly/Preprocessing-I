@@ -171,32 +171,6 @@ nav .navContainer .navContainer a {
   color: #9baec0;
 }
 /*END NAVIGATION STYLING*/
-/*BEGIN ABOUT SECTION STYLING*/
-.aboutDiv {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 1%;
-  padding: 4%;
-  padding: 2%;
-  border: 1px double #9baec0;
-  background-color: rgba(255, 192, 203, 0.103);
-  /*this closes the paragraph*/
-}
-.aboutDiv p {
-  font-style: italic;
-  line-height: 2;
-  text-align: left;
-  font-size: 18px;
-  font: 'Nunito Sans', sans-serif;
-}
-/*this closes about class*/
-.mainImg {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 20%;
-}
 /*begin intro styling*/
 .intro {
   display: flex;
@@ -204,14 +178,15 @@ nav .navContainer .navContainer a {
   align-content: center;
   padding: 2%;
   border: 1px double #9baec0;
-  background-color: rgba(255, 192, 203, 0.103);
+  margin: 1%;
+  padding: 4%;
   /*this closes the div*/
   /*this closes the paragraph*/
 }
 .intro div {
   margin: 1%;
   padding: 4%;
-  width: 80%;
+  width: 60%;
 }
 .intro p {
   line-height: 2;
@@ -224,9 +199,38 @@ nav .navContainer .navContainer a {
   display: flex;
   justify-content: center;
   align-content: center;
+  font: 'Nunito Sans', sans-serif;
 }
 /*this closes the portfolio button*/
 /*end intro styling*/
+/*BEGIN ABOUT SECTION STYLING*/
+.aboutDiv {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1%;
+  padding: 4%;
+  /*this closes the paragraph*/
+}
+.aboutDiv p {
+  font-style: italic;
+  line-height: 2;
+  text-align: left;
+  font-size: 18px;
+  font: 'Nunito Sans', sans-serif;
+  background-color: rgba(255, 192, 203, 0.103);
+  color: #9baec0;
+  padding: 2%;
+  border: 1px double #9baec0;
+  width: 50%;
+}
+/*this closes about class*/
+.mainImg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10%;
+}
 /*END ABOUT SECTION STYLING*/
 /*BEGIN SKILLS SECTION STYLING*/
 .skills {
