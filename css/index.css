@@ -149,19 +149,26 @@ body {
 }
 /*variables*/
 /*mix-ins*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #9baec0;
+  font: 'Noto Serif', serif;
+}
 /*BEGIN NAVIGATION STYLING*/
 nav {
-  background-color: #FFC0CB;
-  height: 8vh;
+  background-color: rgba(255, 192, 203, 0.103);
+  height: 10vh;
 }
-.navContainer nav {
+nav .navContainer {
   display: flex;
+  justify-content: center;
   justify-content: space-evenly;
 }
-nav a {
-  width: 85%;
-  font-size: 22px;
-  color: #708090;
+nav .navContainer .navContainer a {
+  color: #9baec0;
 }
 /*END NAVIGATION STYLING*/
 /*BEGIN ABOUT SECTION STYLING*/
@@ -169,37 +176,48 @@ nav a {
   display: flex;
   justify-content: center;
   align-content: center;
-}
-.aboutDiv div {
-  width: 60%;
+  margin: 1%;
+  padding: 4%;
+  padding: 2%;
+  border: 1px double #9baec0;
+  background-color: rgba(255, 192, 203, 0.103);
+  /*this closes the paragraph*/
 }
 .aboutDiv p {
   font-style: italic;
+  line-height: 2;
+  text-align: left;
+  font-size: 18px;
+  font: 'Nunito Sans', sans-serif;
+}
+/*this closes about class*/
+.mainImg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
 }
 /*begin intro styling*/
 .intro {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 2%;
+  border: 1px double #9baec0;
+  background-color: rgba(255, 192, 203, 0.103);
   /*this closes the div*/
-  /*this closes the h1*/
-  /*this closes the h2*/
   /*this closes the paragraph*/
 }
 .intro div {
   margin: 1%;
   padding: 4%;
-}
-.intro h1 {
-  font-size: 40px;
-}
-.intro h2 {
-  font-size: 30px;
+  width: 80%;
 }
 .intro p {
   line-height: 2;
   text-align: left;
   font-size: 18px;
+  font: 'Nunito Sans', sans-serif;
 }
 /*this closes the intro*/
 .portfolio button {
@@ -215,100 +233,87 @@ nav a {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 2%;
+  border: 1px double #9baec0;
+  background-color: rgba(255, 192, 203, 0.103);
   /*this closes the div*/
-  /*this closes the h3*/
   /*this close the list items*/
 }
 .skills div {
-  width: 50%;
+  width: 60%;
   margin: 1%;
   padding: 4%;
 }
-.skills h3 {
-  font-size: 25px;
-}
 .skills li {
-  font-size: 25px;
+  font-size: 20px;
 }
 /*this closes the skills class*/
 /*END SKILLS SECTION STYLING*/
 /*BEGIN EDUCATION SECTON STYLING*/
-h2 {
-  font-size: 30px;
-}
 .eduContainer {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 2%;
+  border: 1px double #9baec0;
   /*this closes div*/
-  /*this closes the h3*/
-  /*this close the paragraph*/
 }
 .eduContainer div {
   width: 85%;
   margin: 1%;
   padding: 4%;
+  /*this close the paragraph*/
 }
-.eduContainer h3 {
-  font-size: 25px;
-}
-.eduContainer p {
+.eduContainer div p {
   line-height: 2;
   text-align: left;
   font-size: 18px;
+  font: 'Nunito Sans', sans-serif;
 }
 /*this closes big eduContainer*/
 /*END EDUCATION SECTION STYLING*/
 /*BEGIN WORK SECTION STYLING*/
-h2 {
-  font-size: 30px;
-}
-/*this closes h2*/
 .workContainer {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 2%;
+  border: 1px double #9baec0;
   /*this closes div*/
 }
 .workContainer div {
   width: 85%;
   margin: 1%;
   padding: 4%;
+  /*this closes paragraph*/
 }
-/*this closes workContainer*/
-h3 {
-  font-size: 25px;
-}
-/*this closes h3*/
-h4 {
-  font-size: 22px;
-}
-/*this closes h4*/
-p {
+.workContainer div p {
   line-height: 2;
   text-align: left;
   font-size: 18px;
+  font: 'Nunito Sans', sans-serif;
 }
-/*this closes paragraph*/
+/*this closes workContainer*/
 /*END WORK SECTION STYLING*/
 /*BEGIN CONTACT SECTION STYLING*/
 .contact {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 2%;
+  border: 1px double #9baec0;
+  background-color: rgba(255, 192, 203, 0.103);
 }
-div {
-  width: 85%;
+.contact div {
+  width: 75%;
   margin: 1%;
   padding: 4%;
 }
-h5 {
-  font-size: 22px;
-}
-p {
+.contact div p {
   line-height: 2;
   text-align: left;
   font-size: 18px;
+  font: 'Nunito Sans', sans-serif;
 }
 /*END CONTACT SECTIONS STYLING*/
 /*BEGIN FOOTER STYLING*/
@@ -316,17 +321,14 @@ footer {
   height: 8vh;
   background-color: pink;
 }
-nav {
+footer nav {
   display: flex;
   justify-content: center;
   align-content: center;
   margin: 1%;
   padding: 4%;
 }
-h3 {
-  font-size: 25px;
-}
-.social {
+footer .social {
   display: flex;
   justify-content: center;
   align-items: center;

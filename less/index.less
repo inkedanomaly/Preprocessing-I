@@ -58,9 +58,8 @@ html, body {
 }
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Nunito+Sans&display=swap');
 /*variables*/
-@main-color:#708090;   
-@hover-color:#D3D3D3;
-@background-color:#FFC0CB;
+@main-color:#9baec0;   
+@background-color:rgba(255, 192, 203, 0.103);
 @main-font:'Nunito Sans', sans-serif;
 @title-font:'Noto Serif', serif;
 
@@ -80,70 +79,66 @@ html, body {
 	line-height: 2;
 	text-align: left;
 	font-size: 18px;
+	font: @main-font;
+}
+.border(){
+	padding:2%;
+	border: 1px double @main-color;
 }
 
-.heading2(){
-	font-size:30px;
-}
-
-.heading3(){
-	font-size: 25px;
-}
-
-.heading4(){
-	font-size: 22px;
+h1, h2, h3, h4, h5{
+	color:@main-color;
+	font:@title-font;
 }
 											/*BEGIN NAVIGATION STYLING*/
-nav{
+nav {
 	background-color: @background-color;
-	height: 8vh;
-}
-.navContainer nav{
-	display:flex;
-	justify-content: space-evenly;
+	height: 10vh;
 
-}
-nav a{
-	width:85%;
-	.heading4();
-	color:@main-color;
+	.navContainer {
+		display:flex;
+		justify-content: center;
+		justify-content: space-evenly;
+	
+		.navContainer a{
+			color:@main-color;
+		}
+	}
 }
 											/*END NAVIGATION STYLING*/
 											/*BEGIN ABOUT SECTION STYLING*/
-
 .aboutDiv{
-	display:flex;
-	justify-content: center;
-	align-content: center;
-}
+	.center();
+	.margin();
+	.border();
+	background-color: @background-color;
 
-.aboutDiv div{
-	width:60%;
-}
-.aboutDiv p{
-	font-style: italic;
-	
+		p{
+		font-style: italic;
+		.paragraph();
+	}/*this closes the paragraph*/
+}/*this closes about class*/
+
+.mainImg{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	width:20%;
 }
 
 											/*begin intro styling*/					
 .intro{
 	.center();
+	.border();
+	background-color:@background-color;
 
 		div{
 			.margin();
-
+			width:80%;
 	}/*this closes the div*/
 
-		h1{
-			font-size: 40px;
-	}/*this closes the h1*/
-
-		h2{
-			.heading2();
-	}/*this closes the h2*/
-
 		p{
-			.paragraph();
+		.paragraph();
 	}/*this closes the paragraph*/
 
 }/*this closes the intro*/
@@ -156,19 +151,16 @@ nav a{
 											/*BEGIN SKILLS SECTION STYLING*/
 .skills{
 	.center();
+	.border();
+	background-color: @background-color;
 		div{
-			width:50%;
+			width:60%;
 			.margin();
 	}/*this closes the div*/
 
-		h3{
-			.heading3();
-	}/*this closes the h3*/
-
 		li{
-			.heading3();
+			font-size: 20px;
 	}/*this close the list items*/
-
 
 }/*this closes the skills class*/
 
@@ -178,24 +170,19 @@ nav a{
 											/*END SKILLS SECTION STYLING*/
 											/*BEGIN EDUCATION SECTON STYLING*/
 
-h2{
-	.heading2();
-}
 
 .eduContainer{
 	.center();
-		div{
-			width:85%;
-			.margin();
-	}/*this closes div*/
+	.border();
 
-		h3{
-			.heading3();
-	}/*this closes the h3*/
+	div{
+		width:85%;
+		.margin();
 
-		p{
-			.paragraph();
+	p{
+		.paragraph();
 	}/*this close the paragraph*/
+	}/*this closes div*/
 }/*this closes big eduContainer*/
 
 
@@ -203,31 +190,20 @@ h2{
 
 											/*BEGIN WORK SECTION STYLING*/
 
-h2{
-	.heading2();
-}/*this closes h2*/
-
 .workContainer{
 	.center();
+	.border();
 		
 	div{
 		width:85%;
 		.margin();
+
+	p{
+		.paragraph();
+	}/*this closes paragraph*/
 	}/*this closes div*/
 }/*this closes workContainer*/
-
-h3{
-	.heading3();
-}/*this closes h3*/
-
-h4{
-	.heading4();
-}/*this closes h4*/
-
-p{
-	.paragraph();
-}/*this closes paragraph*/
-	
+		
 
 
 
@@ -236,19 +212,17 @@ p{
 											/*BEGIN CONTACT SECTION STYLING*/
 .contact {
 	.center();
-}
+	.border();
+	background-color: @background-color;
 
-div{
-	width:85%;
-	.margin();
-}
+	div{
+		width:75%;
+		.margin();
 
-h5{
-.heading4();
-}
-
-p{
-.paragraph();
+	p{
+	.paragraph();
+	}
+	}
 }
 
 											/*END CONTACT SECTIONS STYLING*/
@@ -257,18 +231,16 @@ p{
 footer{
 	height:8vh;
 	background-color:pink;
-}
-nav{
-	.center();
-	.margin();
-}
-h3{
-	.heading3();
-} 
 
-.social{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	flex-flow:wrap;
+	nav{
+		.center();
+		.margin();
+	}
+
+	.social{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-flow:wrap;
+	}
 }
