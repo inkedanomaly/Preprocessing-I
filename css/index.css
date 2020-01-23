@@ -214,6 +214,8 @@ nav .navContainer .navContainer a {
   width: 90%;
   margin: auto;
   margin-top: 2%;
+  padding: 2%;
+  border: 1px double #9baec0;
   /*this closes div*/
 }
 @media (max-width: 500px) {
@@ -224,9 +226,12 @@ nav .navContainer .navContainer a {
 }
 .eduContainer h2 {
   text-align: left;
+  margin: auto;
 }
 .eduContainer div {
-  width: 45%;
+  width: 40%;
+  margin: 1%;
+  padding: 4%;
   /*this close the paragraph*/
 }
 @media (max-width: 500px) {
