@@ -129,8 +129,20 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
 }
+footer {
+  /*this closes the nav section */
+}
+footer nav {
+  /*-this closes the h3 */
+  /*this closes ul .social section*/
+}
+footer nav ul .social {
+  list-style: none;
+}
+/*this closes the footer */
