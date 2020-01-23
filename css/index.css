@@ -169,6 +169,14 @@ nav .navContainer {
 }
 nav .navContainer .navContainer a {
   color: #9baec0;
+  width: 70%;
+}
+nav .mainImg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+  margin: auto;
 }
 /*END NAVIGATION STYLING*/
 /*begin intro styling*/
@@ -225,12 +233,6 @@ nav .navContainer .navContainer a {
   width: 50%;
 }
 /*this closes about class*/
-.mainImg {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 10%;
-}
 /*END ABOUT SECTION STYLING*/
 /*BEGIN SKILLS SECTION STYLING*/
 .skills {
@@ -240,11 +242,13 @@ nav .navContainer .navContainer a {
   padding: 2%;
   border: 1px double #9baec0;
   background-color: rgba(255, 192, 203, 0.103);
+  width: 50%;
+  margin: auto;
   /*this closes the div*/
   /*this close the list items*/
 }
 .skills div {
-  width: 60%;
+  width: 45%;
   margin: 1%;
   padding: 4%;
 }
@@ -260,10 +264,12 @@ nav .navContainer .navContainer a {
   align-content: center;
   padding: 2%;
   border: 1px double #9baec0;
+  width: 90%;
+  margin: auto;
   /*this closes div*/
 }
 .eduContainer div {
-  width: 85%;
+  width: 40%;
   margin: 1%;
   padding: 4%;
   /*this close the paragraph*/
@@ -283,10 +289,12 @@ nav .navContainer .navContainer a {
   align-content: center;
   padding: 2%;
   border: 1px double #9baec0;
+  width: 90%;
+  margin: auto;
   /*this closes div*/
 }
 .workContainer div {
-  width: 85%;
+  width: 30%;
   margin: 1%;
   padding: 4%;
   /*this closes paragraph*/
