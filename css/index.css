@@ -162,6 +162,14 @@ nav {
   background-color: rgba(255, 192, 203, 0.103);
   height: 10vh;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
 nav .navContainer {
   display: flex;
   justify-content: center;
@@ -171,92 +179,33 @@ nav .navContainer .navContainer a {
   color: #9baec0;
   width: 70%;
 }
-nav .mainImg {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 25%;
-  margin: auto;
-}
 /*END NAVIGATION STYLING*/
-/*begin intro styling*/
-.intro {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 2%;
-  border: 1px double #9baec0;
-  margin: 1%;
-  padding: 4%;
-  /*this closes the div*/
-  /*this closes the paragraph*/
+/*BEGIN CARD STYLING*/
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
-.intro div {
-  margin: 1%;
-  padding: 4%;
-  width: 60%;
+@media (max-width: 500px) {
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 }
-.intro p {
-  line-height: 2;
-  text-align: left;
-  font-size: 18px;
-  font: 'Nunito Sans', sans-serif;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.322);
 }
-/*this closes the intro*/
-.portfolio button {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font: 'Nunito Sans', sans-serif;
+.container {
+  padding: 0 16px;
 }
-/*this closes the portfolio button*/
-/*end intro styling*/
-/*BEGIN ABOUT SECTION STYLING*/
-.aboutDiv {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 1%;
-  padding: 4%;
-  /*this closes the paragraph*/
+.title {
+  color: grey;
 }
-.aboutDiv p {
-  font-style: italic;
-  line-height: 2;
-  text-align: left;
-  font-size: 18px;
-  font: 'Nunito Sans', sans-serif;
-  background-color: rgba(255, 192, 203, 0.103);
-  color: #9baec0;
-  padding: 2%;
-  border: 1px double #9baec0;
-  width: 50%;
-}
-/*this closes about class*/
-/*END ABOUT SECTION STYLING*/
-/*BEGIN SKILLS SECTION STYLING*/
-.skills {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 2%;
-  border: 1px double #9baec0;
-  background-color: rgba(255, 192, 203, 0.103);
-  width: 50%;
-  margin: auto;
-  /*this closes the div*/
-  /*this close the list items*/
-}
-.skills div {
-  width: 45%;
-  margin: 1%;
-  padding: 4%;
-}
-.skills li {
-  font-size: 20px;
-}
-/*this closes the skills class*/
-/*END SKILLS SECTION STYLING*/
+/*END CARD STYLING*/
 /*BEGIN EDUCATION SECTON STYLING*/
 .eduContainer {
   display: flex;
@@ -266,13 +215,34 @@ nav .mainImg {
   border: 1px double #9baec0;
   width: 90%;
   margin: auto;
+  margin-top: 2%;
   /*this closes div*/
+}
+@media (max-width: 500px) {
+  .eduContainer {
+    flex-direction: column;
+    width: 95%;
+  }
+}
+.eduContainer h2 {
+  text-align: justify;
 }
 .eduContainer div {
   width: 40%;
   margin: 1%;
   padding: 4%;
+  padding: 4% 0;
   /*this close the paragraph*/
+}
+@media (max-width: 500px) {
+  .eduContainer div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
 }
 .eduContainer div p {
   line-height: 2;
@@ -281,8 +251,8 @@ nav .mainImg {
   font: 'Nunito Sans', sans-serif;
 }
 /*this closes big eduContainer*/
-/*END EDUCATION SECTION STYLING*/
-/*BEGIN WORK SECTION STYLING*/
+/*education section styling*/
+/*work section styling*/
 .workContainer {
   display: flex;
   justify-content: center;
@@ -291,13 +261,33 @@ nav .mainImg {
   border: 1px double #9baec0;
   width: 90%;
   margin: auto;
+  margin-top: 2%;
   /*this closes div*/
+}
+@media (max-width: 500px) {
+  .workContainer {
+    flex-direction: column;
+    width: 95%;
+  }
+}
+.workContainer h2 {
+  text-align: justify;
 }
 .workContainer div {
   width: 30%;
   margin: 1%;
   padding: 4%;
   /*this closes paragraph*/
+}
+@media (max-width: 500px) {
+  .workContainer div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
 }
 .workContainer div p {
   line-height: 2;
@@ -306,43 +296,9 @@ nav .mainImg {
   font: 'Nunito Sans', sans-serif;
 }
 /*this closes workContainer*/
-/*END WORK SECTION STYLING*/
-/*BEGIN CONTACT SECTION STYLING*/
-.contact {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 2%;
-  border: 1px double #9baec0;
-  background-color: rgba(255, 192, 203, 0.103);
-}
-.contact div {
-  width: 75%;
-  margin: 1%;
-  padding: 4%;
-}
-.contact div p {
-  line-height: 2;
-  text-align: left;
-  font-size: 18px;
-  font: 'Nunito Sans', sans-serif;
-}
-/*END CONTACT SECTIONS STYLING*/
-/*BEGIN FOOTER STYLING*/
-footer {
-  height: 8vh;
-  background-color: pink;
-}
-footer nav {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 1%;
-  padding: 4%;
-}
+/*begin footer styling*/
 footer .social {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
+  align-content: center;
 }

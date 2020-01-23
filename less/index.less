@@ -92,6 +92,13 @@ h1, h2, h3, h4, h5{
 }
 											/*BEGIN NAVIGATION STYLING*/
 nav {
+
+	@media(max-width: 500px) {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		}
 	background-color: @background-color;
 	height: 10vh;
 
@@ -105,156 +112,115 @@ nav {
 			width:70%;
 		}
 	}
-	.mainImg{
-		display:flex;
-		justify-content: flex-end;
-		align-items: center;
-		width:25%;
-		margin:auto;
-	}
+
 }
-											/*END NAVIGATION STYLING*/
+/*END NAVIGATION STYLING*/
+/*BEGIN CARD STYLING*/
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
 
-											/*begin intro styling*/					
-.intro{
-	.center();
-	.border();
-	.margin();
+		@media(max-width: 500px) {
+		width: 100%;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		}
+}
 
-		div{
-			.margin();
-			width:60%;
-	}/*this closes the div*/
-
-		p{
-		.paragraph();
-	}/*this closes the paragraph*/
-
-}/*this closes the intro*/
-
-.portfolio button{
-	.center();
-	font: @main-font;
-}/*this closes the portfolio button*/
-											/*end intro styling*/
-											/*BEGIN ABOUT SECTION STYLING*/
-.aboutDiv{
-	.center();
-	.margin();
-
-		p{
-		font-style: italic;
-		.paragraph();
-		background-color: @background-color;
-		color:@main-color;
-		.border();
-		width:50%;
-	}/*this closes the paragraph*/
-}/*this closes about class*/
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.322);
+}
 
 
-											/*END ABOUT SECTION STYLING*/
-											/*BEGIN SKILLS SECTION STYLING*/
-.skills{
-	.center();
-	.border();
-	background-color: @background-color;
-	width:50%;
-	margin:auto;
-		
-		div{
-			width:45%;
-			.margin();
-	}/*this closes the div*/
+.container {
+	padding: 0 16px;
+}
 
-		li{
-			font-size: 20px;
-	}/*this close the list items*/
-
-}/*this closes the skills class*/
+.title {
+	color: grey;
+}
 
 
-
-
-											/*END SKILLS SECTION STYLING*/
-											/*BEGIN EDUCATION SECTON STYLING*/
-
-
+/*END CARD STYLING*/
+/*BEGIN EDUCATION SECTON STYLING*/
 .eduContainer{
 	.center();
 	.border();
 	width:90%;
 	margin:auto;
-		
+	margin-top: 2%;
 
+		@media(max-width: 500px) {
+			flex-direction: column;
+			width:95%;
+			}
+
+	h2{
+		text-align: justify;
+
+	}
 	div{
 		width:40%;
 		.margin();
-
+		padding:4% 0;
+	
+		@media(max-width: 500px) {
+			.center();
+			flex-direction: column;
+			margin:auto;
+			width:100%;
+			}
 	p{
 		.paragraph();
 	}/*this close the paragraph*/
 	}/*this closes div*/
-}/*this closes big eduContainer*/
+} /*this closes big eduContainer*/
 
+/*education section styling*/
 
-											/*END EDUCATION SECTION STYLING*/
-
-											/*BEGIN WORK SECTION STYLING*/
-
+/*work section styling*/
 .workContainer{
 	.center();
 	.border();
 	width:90%;
 	margin:auto;
+	margin-top: 2%;
+
+		@media(max-width: 500px) {
+			flex-direction: column;
+			width:95%;
+			}
 		
+	h2{
+		text-align: justify;
+
+	}
 	div{
 		width:30%;
 		.margin();
 
+		@media(max-width: 500px) {
+			.center();
+			flex-direction: column;
+			margin:auto;
+			width:100%;
+			}
+	
 	p{
 		.paragraph();
 	}/*this closes paragraph*/
 	}/*this closes div*/
 }/*this closes workContainer*/
 		
-
-
-
-											/*END WORK SECTION STYLING*/
-
-											/*BEGIN CONTACT SECTION STYLING*/
-.contact {
-	.center();
-	.border();
-	background-color: @background-color;
-
-	div{
-		width:75%;
-		.margin();
-
-	p{
-	.paragraph();
-	}
-	}
-}
-
-											/*END CONTACT SECTIONS STYLING*/
-
-											/*BEGIN FOOTER STYLING*/
-footer{
-	height:8vh;
-	background-color:pink;
-
-	nav{
+/*begin footer styling*/
+footer{	
+	
+	.social {
 		.center();
-		.margin();
-	}
 
-	.social{
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		flex-flow:wrap;
 	}
 }
