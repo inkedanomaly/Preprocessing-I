@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/768cc4fbf8.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
@@ -15,21 +16,25 @@
 
 <body>
   <nav>
-    <ul class="navContainer">
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#work">Work History</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="navContainer">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#education">Education</a>
+      <a href="#work">Work History</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
 <header>
-  <section id="#about"><!--this opens About section-->
-    <div class="quote"><!--this opens little div-->
-      <p>“I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”-Maya Angelou</p>
-    </div><!--this closes little div-->
-    <img class="mainImg" img src="images/main.jpg" alt="main portrait image">
+  <section id="#about">
+    <div class="aboutDiv"><!--this opens the big container-->
+      <div><!--this opens little div-->
+        <p>“I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”-Maya Angelou</p>
+      </div><!--this closes little div-->
+      <div><!--this opens the little div-->
+      <img src="images/main.jpg" alt="main portrait image">
+    </div><!--this closes this little div-->
+    </div><!---this closes the big container-->
     <div class="intro"> <!--this opens big container-->
       <div> <!--this opens little div-->
         <h1>Melissa Roby</h1>
@@ -38,13 +43,13 @@
         <button class="#portfolio"><a href="https://www.inkedanomaly.github.io">Check out my portfolio website!</a></button>
       </div><!--this closes little div-->
     </div><!--this closes big container-->
-  </section><!--this closes About section-->
+  </section>
 </header>
 
   <section><!--this opens Skills section-->
     <div class="skills"><!--this opens SKILLS container-->
       <div><!--this opens little div-->
-        <h3>SKills</h3>
+        <h3>Skills</h3>
         <ul> 
           <li>Verbal and written communication</li>
           <li>Typing 70wpm</li>
@@ -66,7 +71,7 @@
     <div class="eduContainer"><!--this opens big container-->
       <div><!--this opens little div-->
         <a href="https://www.lambdaschool.com/">Lambda School</a>
-        <h3>Full Stack Web Development</h4>
+        <h3>Full Stack Web Development</h3>
         <p>1/13/20-present</p>
       </div><!--this closes little div-->
       <div><!--this opens little div-->
@@ -102,7 +107,7 @@
   </section><!--this closes Work section-->
 
   <section id="#contact"><!--this opens Contact section-->
-    <div><!--this opens big container-->
+    <div class="contact"><!--this opens big container-->
       <div><!--this opens the little container-->
       <h5>Contact</h5>
       <address>305 West Fairview Dr.<br>Springfield, OR 97477</address>

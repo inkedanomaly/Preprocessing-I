@@ -86,8 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -105,7 +103,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 2;
 }
 ol,
 ul {
@@ -135,88 +133,202 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFcWbQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
+}
+/*variables*/
+/*mix-ins*/
 /*BEGIN NAVIGATION STYLING*/
 nav {
+  background-color: #FFC0CB;
+  height: 8vh;
+}
+.navContainer nav {
   display: flex;
-  justify-content: center;
-  /*this closes the navContainer*/
+  justify-content: space-evenly;
 }
-nav ul .navContainer {
-  list-style: none;
+nav a {
+  width: 85%;
+  font-size: 22px;
+  color: #708090;
 }
-/* this closes the nav*/
 /*END NAVIGATION STYLING*/
 /*BEGIN ABOUT SECTION STYLING*/
-#about {
-  /*this closes quote class*/
+.aboutDiv {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-/*this closes about section*/
-/*this closes the main Img*/
+.aboutDiv div {
+  width: 60%;
+}
+.aboutDiv p {
+  font-style: italic;
+}
+/*begin intro styling*/
 .intro {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   /*this closes the div*/
   /*this closes the h1*/
   /*this closes the h2*/
   /*this closes the paragraph*/
 }
+.intro div {
+  margin: 1%;
+  padding: 4%;
+}
+.intro h1 {
+  font-size: 40px;
+}
+.intro h2 {
+  font-size: 30px;
+}
+.intro p {
+  line-height: 2;
+  text-align: left;
+  font-size: 18px;
+}
 /*this closes the intro*/
+.portfolio button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 /*this closes the portfolio button*/
+/*end intro styling*/
 /*END ABOUT SECTION STYLING*/
 /*BEGIN SKILLS SECTION STYLING*/
 .skills {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   /*this closes the div*/
   /*this closes the h3*/
-  /*this closes the ul*/
   /*this close the list items*/
+}
+.skills div {
+  width: 50%;
+  margin: 1%;
+  padding: 4%;
+}
+.skills h3 {
+  font-size: 25px;
+}
+.skills li {
+  font-size: 25px;
 }
 /*this closes the skills class*/
 /*END SKILLS SECTION STYLING*/
 /*BEGIN EDUCATION SECTON STYLING*/
-#education {
-  /*this closes h2*/
-  /*this closes big eduContainer*/
-  /*this closes the attributes*/
-  /*this closes h3*/
-  /*this closes h4*/
-  /*this closes paragraph*/
+h2 {
+  font-size: 30px;
 }
-#education .eduContainer {
+.eduContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   /*this closes div*/
+  /*this closes the h3*/
+  /*this close the paragraph*/
 }
-/*this closes education section*/
+.eduContainer div {
+  width: 85%;
+  margin: 1%;
+  padding: 4%;
+}
+.eduContainer h3 {
+  font-size: 25px;
+}
+.eduContainer p {
+  line-height: 2;
+  text-align: left;
+  font-size: 18px;
+}
+/*this closes big eduContainer*/
 /*END EDUCATION SECTION STYLING*/
 /*BEGIN WORK SECTION STYLING*/
-#work {
-  /*this closes h2*/
-  /*this closes big workContainer*/
+h2 {
+  font-size: 30px;
 }
-#work .workContainer {
+/*this closes h2*/
+.workContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   /*this closes div*/
 }
-#work .workContainer div {
-  /*this closes h3*/
-  /*this closes h4*/
-  /*this closes paragraph*/
+.workContainer div {
+  width: 85%;
+  margin: 1%;
+  padding: 4%;
 }
-/*this closes work section*/
+/*this closes workContainer*/
+h3 {
+  font-size: 25px;
+}
+/*this closes h3*/
+h4 {
+  font-size: 22px;
+}
+/*this closes h4*/
+p {
+  line-height: 2;
+  text-align: left;
+  font-size: 18px;
+}
+/*this closes paragraph*/
 /*END WORK SECTION STYLING*/
 /*BEGIN CONTACT SECTION STYLING*/
-#contact {
-  /*this closes the div*/
-  /*this closes h5*/
-  /*this closes the paragraph*/
+.contact {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-/*this closes the contact section*/
+div {
+  width: 85%;
+  margin: 1%;
+  padding: 4%;
+}
+h5 {
+  font-size: 22px;
+}
+p {
+  line-height: 2;
+  text-align: left;
+  font-size: 18px;
+}
 /*END CONTACT SECTIONS STYLING*/
 /*BEGIN FOOTER STYLING*/
 footer {
-  /*this closes the nav section */
+  height: 8vh;
+  background-color: pink;
 }
-footer nav {
-  /*-this closes the h3 */
-  /*this closes ul .social section*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1%;
+  padding: 4%;
 }
-footer nav ul .social {
-  list-style: none;
+h3 {
+  font-size: 25px;
 }
-/*this closes the footer */
-/*END FOOTER STYLING*/
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
