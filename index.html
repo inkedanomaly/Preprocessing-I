@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/768cc4fbf8.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
+  <title>My Resume</title>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +15,120 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <nav>
+    <div class="navContainer">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#education">Education</a>
+      <a href="#work">Work History</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+<header>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/beachdog.jpg" alt="dog on the beach photo" style="width:100%">
+      <div class="container"> <!--this opens little div-->
+        <h2>Melissa Roby</h2>
+        <p class="title">Full Stack Web Development Student at Lambda School</p>
+        <p>Friendly professional with strong communication and problem resolution skills. Solid history of surpassing productivity and quality targets in a high-volume call center environment. Poised, calm under pressure, and capable of reassuring customers when resolving complex issues.</p>
+    </div><!--this closes container div-->
+  </div><!--this closes card container-->
+</div><!--this closes column container-->
+
+  <div class="column">
+    <div class="card">
+      <img src="images/yellowcode.jpg" alt="yellow sticky note code photo" style="width:100%">
+      <div class="container"> <!--this opens little div-->
+        <h2>Skills</h2>
+        <ul> 
+          <li>Verbal and written communication</li>
+          <li>Typing 70wpm</li>
+          <li>Technical troubleshooting</li>
+          <li>Creative problem solving</li>
+          <li>Detail oriented</li>
+        </ul>
+      </div><!--this closes container div-->
+    </div><!--this closes card container-->
+  </div><!--this closes column container-->
+
+  <div class="column">
+    <div class="card">
+      <img src="images/portland.jpg" alt="portland photo" style="width:100%">
+      <div class="container"> <!--this opens little div-->
+        <section id="#contact">
+          <h2>Contact</h2>
+          <i class="far fa-address-card"></i>
+          <address>305 West Fairview Dr.<br>Springfield, OR 97477</address>
+          <i class="fas fa-phone"></i>
+          <h5>Number</h5>
+          <p>(541)393-4390</p>
+          <i class="fas fa-envelope"></i>
+          <h5>E-mail</h5>
+          <p>inkedanomaly@gmail.com</p>
+          <a href="https://www.inkedanomaly.github.io">Check out my portfolio!</a>
+      </div><!--this closes container div-->
+    </div><!--this closes card container-->
+  </div><!--this closes column container-->
+</div><!--this closes row container-->
+</header>
+
+
+  <section id="#education"><!--this opens education section-->
+    <div class="eduContainer"><!--this opens big container-->
+      <h2>Education</h2>
+      <div><!--this opens little div-->
+        <a href="https://www.lambdaschool.com/">Lambda School</a>
+        <h3>Full Stack Web Development</h3>
+        <p>1/13/20-present</p>
+      </div><!--this closes little div-->
+      <div><!--this opens little div-->
+        <a href="https://www.lanecc.edu/">Lane Community College</a>
+        <h3>Oregon Transfer Module</h3>
+        <p>9/2009-12/2012</p>
+      </div><!--this closes little div-->
+    </div><!--this closes big container-->
+  </section><!--this closes Education section-->
+
+  <section id="#work"><!--this opens Work section-->
+    <div class="workContainer"><!--this opens big container-->
+      <h2>Work History</h2>
+      <div><!--this opens little div-->
+        <h3>Lionbridge Technologies</h3>
+        <h3>Rater</h3>
+        <h4>6/6/19-present</h4>
+        <p>Analyzed and provided feedback on text, web pages, images and other types of information for leading search engines.  Reviewed and assigned relevance ratings for specific search query results.</p>
+      </div><!--this closes little div-->
+      <div><!--this opens little div-->
+        <h3>Sykes</h3>
+        <h3>Remote Customer Service Agent</h3>
+        <h4>10/3/2017-2/17/2019</h4>
+        <p>Promoted customer loyalty by delivering exceptional service. Provided account & billing, hardware, and technical troubleshooting support. International chat support and voice support for United States and Canada for Microsoft Xbox and Windows gaming. High volume remote call center environment. Skilled at handling 2-3 chats at a time while navigating multiple applications.</p>
+      </div><!--this closes little div-->
+      <div><!--this opens little div-->
+        <h3>Midtown Direct</h3>
+        <h3>Manager</h3>
+        <h4>3/2016-10/2016</h4>
+        <p>Managed store operations for small local business. Trained new employess. Engaged customers through promotional events.</p>
+      </div><!--this closes little div-->
+    </div><!--this closes big container-->
+  </section><!--this closes Work section-->
+
+  <footer>
+    <nav>
+      <div class="social">
+        <div>
+          <i class="fab fa-twitter"></i><a href="https://twitter.com/xinkedanomaly">Twitter</a>
+          <i class="fab fa-facebook"></i><a href="https://www.facebook.com/xInkedAnomaly">Facebook</a>
+          <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/melissa-roby/">LinkedIn</a>
+          <i class="fab fa-skype"></i><a href="live:inkedanomaly_2">Skype</a>
+          <i class="fab fa-github"></i><a href="https://github.com/inkedanomaly">Github</a>
+        </div>
+      </div>
+    </nav>
+  </footer>
+
 </body>
 </html>

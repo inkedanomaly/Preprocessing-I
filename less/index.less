@@ -20,8 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 2;
 }
 ol, ul {
 	list-style: none;
@@ -50,10 +49,178 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Nunito+Sans&display=swap');
+/*variables*/
+@main-color:#9baec0;   
+@background-color:rgba(255, 192, 203, 0.103);
+@main-font:'Nunito Sans', sans-serif;
+@title-font:'Noto Serif', serif;
+
+/*mix-ins*/
+.center(){ 
+	display:flex;
+	justify-content:center;
+	align-content: center;
 }
 
+.margin(){
+	margin:1%;
+	padding:4%;
+}
+
+.paragraph(){
+	line-height: 2;
+	text-align: left;
+	font-size: 18px;
+	font: @main-font;
+}
+.border(){
+	padding:2%;
+	border: 1px double @main-color;
+}
+
+h1, h2, h3, h4, h5{
+	color:@main-color;
+	font:@title-font;
+}
+											/*BEGIN NAVIGATION STYLING*/
+nav {
+
+	@media(max-width: 500px) {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		}
+	background-color: @background-color;
+	height: 10vh;
+
+	.navContainer {
+		display:flex;
+		justify-content: center;
+		justify-content: space-evenly;
+	
+		.navContainer a{
+			color:@main-color;
+			width:70%;
+		}
+	}
+
+}
+/*END NAVIGATION STYLING*/
+/*BEGIN CARD STYLING*/
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+
+		@media(max-width: 500px) {
+		width: 100%;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		}
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.322);
+}
+
+
+.container {
+	padding: 0 16px;
+}
+
+.title {
+	color: grey;
+}
+
+
+/*END CARD STYLING*/
+/*BEGIN EDUCATION SECTON STYLING*/
+.eduContainer{
+	.center();
+	width:90%;
+	margin:auto;
+	margin-top: 2%;
+	.border();
+
+		@media(max-width: 500px) {
+			flex-direction: column;
+			width:95%;
+			}
+
+	h2{
+		text-align: left;
+		margin:auto;
+
+	}
+	div{
+		width:40%;
+		.margin();
+	
+		@media(max-width: 500px) {
+			.center();
+			flex-direction: column;
+			margin:auto;
+			width:100%;
+			}
+	p{
+		.paragraph();
+	}/*this close the paragraph*/
+	}/*this closes div*/
+} /*this closes big eduContainer*/
+
+/*education section styling*/
+
+/*work section styling*/
+.workContainer{
+	.center();
+	.border();
+	width:90%;
+	margin:auto;
+	margin-top: 2%;
+
+		@media(max-width: 500px) {
+			flex-direction: column;
+			width:95%;
+			}
+		
+	h2{
+		text-align: justify;
+
+	}
+	div{
+		width:30%;
+		.margin();
+
+		@media(max-width: 500px) {
+			.center();
+			flex-direction: column;
+			margin:auto;
+			width:100%;
+			}
+	
+	p{
+		.paragraph();
+	}/*this closes paragraph*/
+	}/*this closes div*/
+}/*this closes workContainer*/
+		
+/*begin footer styling*/
+footer{	
+	
+	.social {
+		.center();
+
+	}
+}
